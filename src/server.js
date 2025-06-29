@@ -11,7 +11,9 @@ dotenv.config();
 app.use(cors());
 app.use(express.json());
 
-// Routes (placeholder)
+// Routes
+app.use("/api/results", require("./routes/results"));
+
 app.get("/", (req, res) => {
     res.send("🔐 Anonymous Health Backend Running!");
 });
@@ -28,5 +30,3 @@ mongoose
         app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
     })
     .catch((err) => console.error("❌ MongoDB connection error:", err));
-app.use('/api/results', require('./routes/results'));
-require('./src/routes/results')
