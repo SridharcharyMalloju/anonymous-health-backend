@@ -4,7 +4,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const app = express();
 
-// Load .env file
+// Load environment variables from .env
 dotenv.config();
 
 // Middleware
@@ -12,8 +12,9 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
-app.use("/api/results", require("./routes/results"));
+app.use("/api/results", require("./src/routes/results")); // Corrected path
 
+// Root route
 app.get("/", (req, res) => {
     res.send("🔐 Anonymous Health Backend Running!");
 });
