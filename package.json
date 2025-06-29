@@ -1,19 +1,19 @@
 {
     "name": "anonymous-health-backend",
     "version": "1.0.0",
-    "description": "Backend for Anonymous Health Identity Protection App",
-    "main": "src/server.js",
+    "description": "Backend for Anonymous Health App",
+    "main": "server.js",
     "scripts": {
-        "start": "node src/server.js"
+        "start": "node server.js"
     },
     "keywords": [],
-    "author": "Sridhar Chary",
+    "author": "Sridhar",
     "license": "MIT",
     "dependencies": {
         "cors": "^2.8.5",
+        "crypto-js": "^4.1.1",
         "dotenv": "^16.3.1",
         "express": "^4.18.2",
-        "mongoose": "^7.6.0",
-        "crypto-js": "^4.2.0"
+        "mongoose": "^7.4.0"
     }
 }
