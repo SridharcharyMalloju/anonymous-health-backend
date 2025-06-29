@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "anonymous-health-backend",
   "version": "1.0.0",
   "main": "index.js",
@@ -13,3 +14,23 @@
     "mongoose": "^7.3.4"
   }
 }
+=======
+    "name": "anonymous-health-backend",
+    "version": "1.0.0",
+    "description": "Backend for Anonymous Health App",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "keywords": [],
+    "author": "Sridhar",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "crypto-js": "^4.1.1",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "mongoose": "^7.4.0"
+    }
+}
+>>>>>>> 88da946fb83c8b5e6c0f717120dcb16b028c2c4a
